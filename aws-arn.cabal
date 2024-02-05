@@ -53,15 +53,14 @@ common deps
   build-depends:
     , base             >=4.12   && <4.19
     , deriving-compat  >=0.5.10 && <0.7
-    , profunctors      >=5.0    && <5.7
     , tagged           ^>=0.8
     , text             ^>=1.2.3 || >=2.0 && <2.1 || ^>=2.1
+    , microlens-pro    >= 0.2.0 && < 0.3.0
 
 library
   import:          opts, deps
   exposed-modules:
     Network.AWS.ARN
-    Network.AWS.ARN.Internal.Lens
     Network.AWS.ARN.Lambda
     Network.AWS.ARN.S3
 
